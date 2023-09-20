@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Avatar from 'react-avatar'
 
 function Header() {
+
   return (
     <header>
       <div className='flex flex-col items-center rounded-b-2xl bg-gray-500/10 p-5 md:flex-row'>
