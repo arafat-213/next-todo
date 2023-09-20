@@ -12,11 +12,11 @@ function Header() {
       <div className='flex flex-col items-center rounded-b-2xl bg-gray-500/10 p-5 md:flex-row'>
         <div className='absolute left-0 top-0 -z-50 h-96 w-full rounded-md bg-gradient-to-br from-fuchsia-400 to-[#0055D1] opacity-50 blur-3xl filter'></div>
         <Image
-          src='/assets/images/Trello_logo.png'
+          src='/assets/images/logo.png'
           alt='Trello Logo'
           width={300}
           height={100}
-          className='w-44 object-contain pb-10 md:w-56 md:pb-0'
+          className='w-44 object-contain pb-10 md:h-20 md:w-56 md:pb-0'
         />
         <div className='flex flex-1 items-center justify-end space-x-5'>
           {/* Search box */}
