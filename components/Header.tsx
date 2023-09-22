@@ -1,4 +1,5 @@
 'use client'
+import { useBoardStore } from '@/store/BoardStore'
 import {
   MagnifyingGlassIcon,
   UserCircleIcon
@@ -7,6 +8,12 @@ import Image from 'next/image'
 import Avatar from 'react-avatar'
 
 function Header() {
+  // TODO: Implement debounce for search bar
+  
+  const [searchString, setSearchString] = useBoardStore((state) => [
+    state.searchString,
+    state.setSearchString
+  ])
 
   return (
     <header>
@@ -26,6 +33,8 @@ function Header() {
             <input
               type='text'
               placeholder='search'
+              value={searchString}
+              onChange={(e) => setSearchString(e.target.value)}
               className='flex-1 outline-none'
             />
             <button type='submit' hidden>

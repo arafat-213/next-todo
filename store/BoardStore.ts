@@ -7,8 +7,9 @@ interface BoardState {
   board: Board
  getBoard: () => Promise<void>
  setBoard: (board: Board) => void,
- updateTodoInDB: (todo: Todo, columnId: TypedColumn) => Promise <void>
- 
+ updateTodoInDB: (todo: Todo, columnId: TypedColumn) => Promise <void>,
+ searchString: string,
+ setSearchString: (searchString: string) => void,
 }
 
 export const useBoardStore = create<BoardState>()(
@@ -33,7 +34,9 @@ export const useBoardStore = create<BoardState>()(
               status: columnId
             }
           )
-        }
+        },
+        searchString: '',
+        setSearchString: (searchString) => set({ searchString }),
       }),
       {
         name: 'board-storage'
