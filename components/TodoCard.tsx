@@ -1,4 +1,4 @@
-import { XCircleIcon } from '@heroicons/react/24/solid'
+import { MinusCircleIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { DraggableProvidedDragHandleProps, DraggableProvidedDraggableProps } from 'react-beautiful-dnd'
 
@@ -23,7 +23,7 @@ function TodoCard({todo, index, id, innerRef, draggableProps, dragHandleProps}: 
         {todo.title}
         </p>
         <button className='text-red-500 hover:text-red-600'>
-            <XCircleIcon className='ml-5 h-8 w-8' />
+            <MinusCircleIcon className='ml-5 h-8 w-8' />
         </button>
      </div>
     </div>
