@@ -45,12 +45,6 @@ function Header() {
           <Avatar name='Arafat Tai' round color='#0055D1' size='50' />
         </div>
       </div>
-      <div className='flex items-center justify-center px-5 py-2 md:py-5'>
-        <p className='w-fit max-w-3xl rounded-xl bg-white p-5 pr-5 text-sm font-light italic text-[#0055D1] shadow-xl'>
-          <UserCircleIcon className='mr-1 inline-block h-10 w-10 text-[#0055D1]' />
-          GPT is summarising your tasks for the day....
-        </p>
-      </div>
     </header>
   )
 }
